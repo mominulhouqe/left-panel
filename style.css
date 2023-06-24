@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center align the menu items vertically */
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  #left-panel {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  #left-panel a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #content {
+    margin-left: 220px;
+    padding: 10px;
+  }
+
+  #home-content,
+  #contact-content,
+  #info-content,
+  #guide-content {
+    display: none;
+  }
+
+  #home-content.show,
+  #contact-content.show,
+  #info-content.show,
+  #guide-content.show {
+    display: block;
+  }
+
+  /* Styles for the navigation links */
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+  }
+
+  /* Styles for the active navigation link */
+  nav .active a {
+    background-color: #333;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    #left-panel {
+      width: 100%;
+      position: relative;
+      height: auto;
+      overflow-y: visible;
+    }
+
+    #content {
+      margin-left: 0;
+    }
+  }

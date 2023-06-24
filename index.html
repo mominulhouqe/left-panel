@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Panel Example</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Left Panel Example</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li class="active"><a href="#" onclick="showContent('home-content')">Home</a></li>
+      <li><a href="#" onclick="showContent('contact-content')">Contact</a></li>
+      <li><a href="#" onclick="showContent('info-content')">Information</a></li>
+      <li><a href="#" onclick="showContent('guide-content')">Guide</a></li>
+    </ul>
+  </nav>
+
+  <div id="left-panel">
+    <ul>
+      <li><a href="#" onclick="showContent('home-content')">Home</a></li>
+      <li><a href="#" onclick="showContent('contact-content')">Contact</a></li>
+      <li><a href="#" onclick="showContent('info-content')">Information</a></li>
+      <li><a href="#" onclick="showContent('guide-content')">Guide</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <div id="home-content" class="content show">
+
+      <h1>Welcome to the Home Page</h1>
+      <p>This is the content for the Home page.</p>
+
+    
+      <div>
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non tortor interdum, ultrices metus at, consequat quam. Duis sed ipsum id urna tincidunt tempus. Quisque ac efficitur velit. Phasellus eu tincidunt massa. Fusce commodo sem id sollicitudin consequat. Sed ut tellus at erat tincidunt auctor at a erat. Donec dapibus turpis non eros volutpat, a rutrum est congue. Aliquam gravida tristique diam, ut tempor neque ullamcorper et. Ut quis dapibus neque.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+
+    </div>
+
+    <div id="contact-content" class="content">
+      <h1>Contact Information</h1>
+      <p>This is the content for the Contact page.</p>
+    </div>
+
+    <div id="info-content" class="content">
+      <h1>Information</h1>
+      <p>This is the content for the Information page.</p>
+    </div>
+
+    <div id="guide-content" class="content">
+      <h1>Guide</h1>
+      <p>This is the content for the Guide page.</p>
+    </div>
+  </div>
+
+  <!-- javaScript file -->
+  <script src="index.js"></script>
+</body>
+</html>
